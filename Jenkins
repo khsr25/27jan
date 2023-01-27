@@ -1,0 +1,7 @@
+pipeline {
+    agent any
+    
+    parameters{
+       choice(name:"TARGET_ENV", choice: ["dev","test","prod"], description: "AWS Env to deploy to.")
+    }
+}
